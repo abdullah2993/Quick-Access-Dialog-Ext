@@ -1,0 +1,100 @@
+<!-- options.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quick Access Settings</title>
+  <meta charset="utf-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      margin-bottom: 30px;
+    }
+    
+    .form-section {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      margin-bottom: 5px;
+    }
+    
+    .site-entry {
+      display: flex;
+      margin-bottom: 10px;
+      align-items: center;
+    }
+    
+    .site-entry input {
+      flex: 1;
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+    
+    .site-entry button {
+      cursor: pointer;
+    }
+    
+    #add-site, #save-settings {
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 3px;
+      margin-top: 10px;
+    }
+    
+    #add-site:hover, #save-settings:hover {
+      background-color: #3367d6;
+    }
+    
+    #status {
+      color: green;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Quick Access Settings</h1>
+  
+  <div class="form-section">
+    <h2>Search Options</h2>
+    <label>
+      <input type="checkbox" id="search-bookmarks"> Include bookmarks in search results
+    </label>
+  </div>
+  
+  <div class="form-section">
+    <h2>Custom Websites</h2>
+    <p>Add websites you want to access quickly:</p>
+    
+    <div id="sites-container">
+      <!-- Site entries will be added here dynamically -->
+    </div>
+    
+    <button id="add-site">Add Website</button>
+  </div>
+  
+  <button id="save-settings">Save Settings</button>
+  
+  <div id="status"></div>
+  
+  <script src="options.js"></script>
+</body>
+</html>

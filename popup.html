@@ -1,0 +1,71 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quick Access</title>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 350px;
+      font-family: Arial, sans-serif;
+      padding: 10px;
+    }
+    
+    #search-input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    
+    ul#results {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    
+    li.result-item {
+      padding: 8px;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+    }
+    
+    li.result-item:hover, li.result-item.selected {
+      background-color: #f5f5f5;
+    }
+    
+    .source-tag {
+      font-size: 11px;
+      background-color: #e0e0e0;
+      padding: 2px 5px;
+      border-radius: 3px;
+      margin-left: 5px;
+    }
+    
+    .bookmark-tag {
+      background-color: #bbdefb;
+    }
+    
+    .custom-tag {
+      background-color: #c8e6c9;
+    }
+    
+    .settings-link {
+      display: block;
+      text-align: right;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="search-input" autofocus placeholder="Type to search...">
+  <ul id="results"></ul>
+  <a href="#" id="open-settings" class="settings-link">Settings</a>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
