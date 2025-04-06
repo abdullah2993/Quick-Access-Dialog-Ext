@@ -7,3 +7,7 @@ A browser extension that provides quick access to your favorite websites and boo
 - Quick access to your favorite websites and bookmarks(optional)
 - Convenient keyboard shortcut (Alt+O)
 - Easy to install and use
+
+## Installation
+
+https://addons.mozilla.org/en-US/firefox/addon/quick-access-dialog/

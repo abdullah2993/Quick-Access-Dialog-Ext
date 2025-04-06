@@ -1,0 +1,11 @@
+{
+  "version": { "license": "MIT" },
+  "categories": { "firefox": [ "bookmarks", "tabs"] },
+  "requires_payment": false,
+  "homepage": {
+    "en-US": "https://github.com/abdullah2993/Quick-Access-Dialog-Ext"
+  },
+  "support_email": {
+    "en-US": "a.saleem2993@gmail.com"
+  }
+}
